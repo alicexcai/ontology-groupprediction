@@ -1,0 +1,31 @@
+Task,Complexity,playerCount,Weak_NN,Weak_LM,Strong_NN,Strong_LM,Weak_Baseline,Strong_Baseline
+Wildcat Wells,Low,3,1.46,1.75,0.96,0.97,1.47,0.91
+Wildcat Wells,Low,6,1.64,1.88,0.99,0.93,1.47,0.91
+Wildcat Wells,Medium,3,1.57,1.76,0.98,0.93,1.47,0.91
+Wildcat Wells,Medium,6,1.71,1.89,0.87,0.89,1.47,0.91
+Wildcat Wells,High,3,1.59,1.80,0.98,0.97,1.47,0.91
+Wildcat Wells,High,6,1.77,1.92,0.93,0.93,1.47,0.91
+WildCam,Low,3,1.68,2.19,1.06,1.11,1.47,0.91
+WildCam,Low,6,1.95,2.31,1.13,1.07,1.47,0.91
+WildCam,Medium,3,1.86,2.20,1.12,1.07,1.47,0.91
+WildCam,Medium,6,2.10,2.32,1.10,1.03,1.47,0.91
+WildCam,High,3,1.87,2.24,1.09,1.11,1.47,0.91
+WildCam,High,6,2.14,2.36,1.13,1.07,1.47,0.91
+Recall Association,Low,3,1.63,1.84,1.03,1.05,1.47,0.91
+Recall Association,Low,6,1.87,1.96,1.10,1.01,1.47,0.91
+Recall Association,Medium,3,1.79,1.85,1.09,1.01,1.47,0.91
+Recall Association,Medium,6,2.01,1.97,1.05,0.98,1.47,0.91
+Recall Association,High,3,1.78,1.88,1.07,1.05,1.47,0.91
+Recall Association,High,6,2.04,2.01,1.09,1.01,1.47,0.91
+Advertisement Writing,Low,3,1.13,1.11,0.91,0.98,1.47,0.91
+Advertisement Writing,Low,6,1.15,1.23,0.93,0.95,1.47,0.91
+Advertisement Writing,Medium,3,1.08,1.12,0.96,0.94,1.47,0.91
+Advertisement Writing,Medium,6,1.05,1.24,0.92,0.91,1.47,0.91
+Advertisement Writing,High,3,1.06,1.16,0.98,0.98,1.47,0.91
+Advertisement Writing,High,6,1.04,1.28,0.94,0.94,1.47,0.91
+Putting Food Into Categories,Low,3,1.82,2.23,1.10,1.32,1.47,0.91
+Putting Food Into Categories,Low,6,2.02,2.35,1.24,1.28,1.47,0.91
+Putting Food Into Categories,Medium,3,1.88,2.24,1.21,1.28,1.47,0.91
+Putting Food Into Categories,Medium,6,2.02,2.36,1.31,1.24,1.47,0.91
+Putting Food Into Categories,High,3,1.98,2.28,1.23,1.31,1.47,0.91
+Putting Food Into Categories,High,6,2.15,2.40,1.30,1.28,1.47,0.91

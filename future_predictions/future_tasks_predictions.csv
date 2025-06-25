@@ -1,0 +1,493 @@
+,task,High,Medium,Low,playerCount,Weak Prediction,Strong Prediction
+0,Categorization problem,0,0,1,3,1.49,0.88
+1,Categorization problem,0,1,0,3,1.59,0.76
+2,Categorization problem,1,0,0,3,1.62,0.83
+3,Categorization problem,0,0,1,6,1.62,0.86
+4,Categorization problem,0,1,0,6,1.76,0.74
+5,Categorization problem,1,0,0,6,1.83,0.75
+6,Mastermind,0,0,1,3,1.33,0.91
+7,Mastermind,0,1,0,3,1.43,0.9
+8,Mastermind,1,0,0,3,1.48,0.92
+9,Mastermind,0,0,1,6,1.47,0.91
+10,Mastermind,0,1,0,6,1.62,0.81
+11,Mastermind,1,0,0,6,1.67,0.85
+12,"Rank cities by population, rank words by familiarity",0,0,1,3,1.21,0.79
+13,"Rank cities by population, rank words by familiarity",0,1,0,3,1.32,0.74
+14,"Rank cities by population, rank words by familiarity",1,0,0,3,1.34,0.76
+15,"Rank cities by population, rank words by familiarity",0,0,1,6,1.44,0.73
+16,"Rank cities by population, rank words by familiarity",0,1,0,6,1.55,0.65
+17,"Rank cities by population, rank words by familiarity",1,0,0,6,1.59,0.67
+18,Shopping plan,0,0,1,3,1.8,1.06
+19,Shopping plan,0,1,0,3,1.9,1.06
+20,Shopping plan,1,0,0,3,1.95,1.08
+21,Shopping plan,0,0,1,6,1.96,1.07
+22,Shopping plan,0,1,0,6,2.05,0.99
+23,Shopping plan,1,0,0,6,2.09,1.0
+24,Carter Racing (Experimenterless Version),0,0,1,3,1.32,0.86
+25,Carter Racing (Experimenterless Version),0,1,0,3,1.43,0.78
+26,Carter Racing (Experimenterless Version),1,0,0,3,1.45,0.87
+27,Carter Racing (Experimenterless Version),0,0,1,6,1.48,0.87
+28,Carter Racing (Experimenterless Version),0,1,0,6,1.62,0.79
+29,Carter Racing (Experimenterless Version),1,0,0,6,1.65,0.82
+30,Iterative lemonade stand task,0,0,1,3,1.35,0.87
+31,Iterative lemonade stand task,0,1,0,3,1.43,0.83
+32,Iterative lemonade stand task,1,0,0,3,1.49,0.86
+33,Iterative lemonade stand task,0,0,1,6,1.55,0.85
+34,Iterative lemonade stand task,0,1,0,6,1.64,0.74
+35,Iterative lemonade stand task,1,0,0,6,1.7,0.76
+36,Reading the mind in the eyes,0,0,1,3,1.31,0.82
+37,Reading the mind in the eyes,0,1,0,3,1.41,0.72
+38,Reading the mind in the eyes,1,0,0,3,1.46,0.78
+39,Reading the mind in the eyes,0,0,1,6,1.51,0.78
+40,Reading the mind in the eyes,0,1,0,6,1.62,0.68
+41,Reading the mind in the eyes,1,0,0,6,1.68,0.71
+42,Carter Racing,0,0,1,3,1.39,0.83
+43,Carter Racing,0,1,0,3,1.48,0.75
+44,Carter Racing,1,0,0,3,1.51,0.8
+45,Carter Racing,0,0,1,6,1.63,0.82
+46,Carter Racing,0,1,0,6,1.71,0.74
+47,Carter Racing,1,0,0,6,1.78,0.73
+48,Arithmetic problem 1,0,0,1,3,1.41,0.92
+49,Arithmetic problem 1,0,1,0,3,1.52,0.86
+50,Arithmetic problem 1,1,0,0,3,1.55,0.91
+51,Arithmetic problem 1,0,0,1,6,1.56,0.9
+52,Arithmetic problem 1,0,1,0,6,1.68,0.8
+53,Arithmetic problem 1,1,0,0,6,1.73,0.83
+54,Space Fortress,0,0,1,3,1.41,0.91
+55,Space Fortress,0,1,0,3,1.47,0.89
+56,Space Fortress,1,0,0,3,1.52,0.93
+57,Space Fortress,0,0,1,6,1.5,0.89
+58,Space Fortress,0,1,0,6,1.59,0.78
+59,Space Fortress,1,0,0,6,1.64,0.83
+60,Visual Oddball Target,0,0,1,3,1.17,0.77
+61,Visual Oddball Target,0,1,0,3,1.29,0.65
+62,Visual Oddball Target,1,0,0,3,1.3,0.7
+63,Visual Oddball Target,0,0,1,6,1.35,0.76
+64,Visual Oddball Target,0,1,0,6,1.49,0.63
+65,Visual Oddball Target,1,0,0,6,1.56,0.63
+66,The N light bulbs game,0,0,1,3,1.21,0.79
+67,The N light bulbs game,0,1,0,3,1.29,0.73
+68,The N light bulbs game,1,0,0,3,1.34,0.75
+69,The N light bulbs game,0,0,1,6,1.44,0.75
+70,The N light bulbs game,0,1,0,6,1.52,0.64
+71,The N light bulbs game,1,0,0,6,1.58,0.64
+72,Word completion given starting letter,0,0,1,3,1.55,1.13
+73,Word completion given starting letter,0,1,0,3,1.63,1.23
+74,Word completion given starting letter,1,0,0,3,1.67,1.27
+75,Word completion given starting letter,0,0,1,6,1.6,1.23
+76,Word completion given starting letter,0,1,0,6,1.75,1.24
+77,Word completion given starting letter,1,0,0,6,1.78,1.29
+78,Railroad Route Construction game,0,0,1,3,1.33,0.91
+79,Railroad Route Construction game,0,1,0,3,1.47,0.92
+80,Railroad Route Construction game,1,0,0,3,1.52,0.97
+81,Railroad Route Construction game,0,0,1,6,1.54,0.97
+82,Railroad Route Construction game,0,1,0,6,1.69,0.93
+83,Railroad Route Construction game,1,0,0,6,1.77,0.96
+84,Game of Clue - Terrorist Attack,0,0,1,3,1.81,1.07
+85,Game of Clue - Terrorist Attack,0,1,0,3,1.86,1.03
+86,Game of Clue - Terrorist Attack,1,0,0,3,1.9,1.09
+87,Game of Clue - Terrorist Attack,0,0,1,6,1.89,1.07
+88,Game of Clue - Terrorist Attack,0,1,0,6,1.97,0.95
+89,Game of Clue - Terrorist Attack,1,0,0,6,1.99,1.0
+90,Word completion given part of word,0,0,1,3,1.64,1.16
+91,Word completion given part of word,0,1,0,3,1.71,1.27
+92,Word completion given part of word,1,0,0,3,1.73,1.26
+93,Word completion given part of word,0,0,1,6,1.64,1.22
+94,Word completion given part of word,0,1,0,6,1.81,1.24
+95,Word completion given part of word,1,0,0,6,1.84,1.25
+96,NASA Moon survival,0,0,1,3,1.33,0.77
+97,NASA Moon survival,0,1,0,3,1.41,0.72
+98,NASA Moon survival,1,0,0,3,1.44,0.78
+99,NASA Moon survival,0,0,1,6,1.58,0.77
+100,NASA Moon survival,0,1,0,6,1.63,0.68
+101,NASA Moon survival,1,0,0,6,1.7,0.72
+102,Image rating,0,0,1,3,1.19,0.66
+103,Image rating,0,1,0,3,1.27,0.55
+104,Image rating,1,0,0,3,1.31,0.65
+105,Image rating,0,0,1,6,1.41,0.62
+106,Image rating,0,1,0,6,1.49,0.55
+107,Image rating,1,0,0,6,1.57,0.57
+108,Estimating Factual Quantities,0,0,1,3,1.45,0.9
+109,Estimating Factual Quantities,0,1,0,3,1.55,0.83
+110,Estimating Factual Quantities,1,0,0,3,1.57,0.88
+111,Estimating Factual Quantities,0,0,1,6,1.6,0.83
+112,Estimating Factual Quantities,0,1,0,6,1.73,0.73
+113,Estimating Factual Quantities,1,0,0,6,1.74,0.77
+114,Run a mini business,0,0,1,3,1.44,0.87
+115,Run a mini business,0,1,0,3,1.52,0.82
+116,Run a mini business,1,0,0,3,1.58,0.87
+117,Run a mini business,0,0,1,6,1.69,0.84
+118,Run a mini business,0,1,0,6,1.76,0.73
+119,Run a mini business,1,0,0,6,1.79,0.77
+120,Recall videos,0,0,1,3,1.36,0.87
+121,Recall videos,0,1,0,3,1.49,0.81
+122,Recall videos,1,0,0,3,1.53,0.83
+123,Recall videos,0,0,1,6,1.54,0.84
+124,Recall videos,0,1,0,6,1.65,0.76
+125,Recall videos,1,0,0,6,1.71,0.77
+126,Search for Oil Task,0,0,1,3,1.52,0.96
+127,Search for Oil Task,0,1,0,3,1.63,0.95
+128,Search for Oil Task,1,0,0,3,1.68,0.96
+129,Search for Oil Task,0,0,1,6,1.66,0.94
+130,Search for Oil Task,0,1,0,6,1.77,0.85
+131,Search for Oil Task,1,0,0,6,1.81,0.89
+132,To evacuate or not to evacuate,0,0,1,3,1.17,0.64
+133,To evacuate or not to evacuate,0,1,0,3,1.24,0.52
+134,To evacuate or not to evacuate,1,0,0,3,1.29,0.54
+135,To evacuate or not to evacuate,0,0,1,6,1.46,0.6
+136,To evacuate or not to evacuate,0,1,0,6,1.55,0.49
+137,To evacuate or not to evacuate,1,0,0,6,1.64,0.5
+138,Estimating geological metrics,0,0,1,3,1.26,0.83
+139,Estimating geological metrics,0,1,0,3,1.35,0.8
+140,Estimating geological metrics,1,0,0,3,1.36,0.83
+141,Estimating geological metrics,0,0,1,6,1.43,0.78
+142,Estimating geological metrics,0,1,0,6,1.53,0.72
+143,Estimating geological metrics,1,0,0,6,1.55,0.71
+144,Euclidean traveling salesperson,0,0,1,3,1.4,0.9
+145,Euclidean traveling salesperson,0,1,0,3,1.49,0.83
+146,Euclidean traveling salesperson,1,0,0,3,1.54,0.9
+147,Euclidean traveling salesperson,0,0,1,6,1.54,0.86
+148,Euclidean traveling salesperson,0,1,0,6,1.66,0.74
+149,Euclidean traveling salesperson,1,0,0,6,1.72,0.79
+150,Reproducing arts,0,0,1,3,1.6,1.1
+151,Reproducing arts,0,1,0,3,1.7,1.14
+152,Reproducing arts,1,0,0,3,1.68,1.14
+153,Reproducing arts,0,0,1,6,1.61,1.1
+154,Reproducing arts,0,1,0,6,1.79,1.08
+155,Reproducing arts,1,0,0,6,1.81,1.1
+156,Estimating social quantity,0,0,1,3,1.29,0.83
+157,Estimating social quantity,0,1,0,3,1.38,0.77
+158,Estimating social quantity,1,0,0,3,1.4,0.82
+159,Estimating social quantity,0,0,1,6,1.45,0.75
+160,Estimating social quantity,0,1,0,6,1.58,0.67
+161,Estimating social quantity,1,0,0,6,1.6,0.69
+162,Hidden figures in a picture (Searching Task),0,0,1,3,1.63,1.07
+163,Hidden figures in a picture (Searching Task),0,1,0,3,1.7,1.11
+164,Hidden figures in a picture (Searching Task),1,0,0,3,1.73,1.12
+165,Hidden figures in a picture (Searching Task),0,0,1,6,1.67,1.1
+166,Hidden figures in a picture (Searching Task),0,1,0,6,1.83,1.07
+167,Hidden figures in a picture (Searching Task),1,0,0,6,1.83,1.1
+168,Estimating pages of a book,0,0,1,3,1.18,0.76
+169,Estimating pages of a book,0,1,0,3,1.28,0.66
+170,Estimating pages of a book,1,0,0,3,1.29,0.73
+171,Estimating pages of a book,0,0,1,6,1.38,0.71
+172,Estimating pages of a book,0,1,0,6,1.48,0.6
+173,Estimating pages of a book,1,0,0,6,1.54,0.63
+174,Abstract grid task,0,0,1,3,1.35,0.9
+175,Abstract grid task,0,1,0,3,1.45,0.85
+176,Abstract grid task,1,0,0,3,1.47,0.89
+177,Abstract grid task,0,0,1,6,1.48,0.89
+178,Abstract grid task,0,1,0,6,1.62,0.76
+179,Abstract grid task,1,0,0,6,1.68,0.8
+180,Target Search,0,0,1,3,1.35,0.89
+181,Target Search,0,1,0,3,1.46,0.9
+182,Target Search,1,0,0,3,1.54,0.9
+183,Target Search,0,0,1,6,1.54,0.86
+184,Target Search,0,1,0,6,1.66,0.79
+185,Target Search,1,0,0,6,1.72,0.83
+186,Find the maximum,0,0,1,3,1.39,0.83
+187,Find the maximum,0,1,0,3,1.47,0.76
+188,Find the maximum,1,0,0,3,1.46,0.85
+189,Find the maximum,0,0,1,6,1.52,0.77
+190,Find the maximum,0,1,0,6,1.63,0.68
+191,Find the maximum,1,0,0,6,1.61,0.71
+192,Recall stories,0,0,1,3,1.41,0.9
+193,Recall stories,0,1,0,3,1.54,0.83
+194,Recall stories,1,0,0,3,1.57,0.87
+195,Recall stories,0,0,1,6,1.55,0.86
+196,Recall stories,0,1,0,6,1.7,0.75
+197,Recall stories,1,0,0,6,1.75,0.79
+198,Letters-to-numbers problems (cryptography),0,0,1,3,1.49,0.95
+199,Letters-to-numbers problems (cryptography),0,1,0,3,1.61,0.95
+200,Letters-to-numbers problems (cryptography),1,0,0,3,1.66,0.97
+201,Letters-to-numbers problems (cryptography),0,0,1,6,1.6,0.94
+202,Letters-to-numbers problems (cryptography),0,1,0,6,1.78,0.85
+203,Letters-to-numbers problems (cryptography),1,0,0,6,1.81,0.89
+204,Architectural design task,0,0,1,3,1.57,0.95
+205,Architectural design task,0,1,0,3,1.68,0.94
+206,Architectural design task,1,0,0,3,1.74,0.97
+207,Architectural design task,0,0,1,6,1.82,0.96
+208,Architectural design task,0,1,0,6,1.91,0.89
+209,Architectural design task,1,0,0,6,1.95,0.92
+210,Wason's Selection Task,0,0,1,3,1.21,0.79
+211,Wason's Selection Task,0,1,0,3,1.35,0.68
+212,Wason's Selection Task,1,0,0,3,1.34,0.74
+213,Wason's Selection Task,0,0,1,6,1.38,0.77
+214,Wason's Selection Task,0,1,0,6,1.52,0.65
+215,Wason's Selection Task,1,0,0,6,1.58,0.64
+216,Summarize Discussion,0,0,1,3,0.89,0.8
+217,Summarize Discussion,0,1,0,3,0.98,0.78
+218,Summarize Discussion,1,0,0,3,0.94,0.85
+219,Summarize Discussion,0,0,1,6,1.14,0.72
+220,Summarize Discussion,0,1,0,6,1.24,0.69
+221,Summarize Discussion,1,0,0,6,1.21,0.71
+222,Crisis mapping,0,0,1,3,1.67,1.01
+223,Crisis mapping,0,1,0,3,1.74,0.99
+224,Crisis mapping,1,0,0,3,1.75,1.03
+225,Crisis mapping,0,0,1,6,1.78,1.04
+226,Crisis mapping,0,1,0,6,1.87,0.95
+227,Crisis mapping,1,0,0,6,1.89,0.98
+228,9 Dot Problem,0,0,1,3,1.2,0.78
+229,9 Dot Problem,0,1,0,3,1.37,0.76
+230,9 Dot Problem,1,0,0,3,1.36,0.79
+231,9 Dot Problem,0,0,1,6,1.36,0.84
+232,9 Dot Problem,0,1,0,6,1.54,0.77
+233,9 Dot Problem,1,0,0,6,1.59,0.78
+234,The Fish game,0,0,1,3,1.44,0.84
+235,The Fish game,0,1,0,3,1.48,0.76
+236,The Fish game,1,0,0,3,1.57,0.81
+237,The Fish game,0,0,1,6,1.63,0.75
+238,The Fish game,0,1,0,6,1.71,0.62
+239,The Fish game,1,0,0,6,1.76,0.66
+240,Hidden figures in a picture (Recall Task),0,0,1,3,1.57,1.04
+241,Hidden figures in a picture (Recall Task),0,1,0,3,1.66,1.09
+242,Hidden figures in a picture (Recall Task),1,0,0,3,1.67,1.07
+243,Hidden figures in a picture (Recall Task),0,0,1,6,1.64,1.06
+244,Hidden figures in a picture (Recall Task),0,1,0,6,1.78,1.04
+245,Hidden figures in a picture (Recall Task),1,0,0,6,1.77,1.06
+246,Computer maze,0,0,1,3,1.39,0.93
+247,Computer maze,0,1,0,3,1.48,0.9
+248,Computer maze,1,0,0,3,1.54,0.93
+249,Computer maze,0,0,1,6,1.53,0.9
+250,Computer maze,0,1,0,6,1.66,0.77
+251,Computer maze,1,0,0,6,1.72,0.82
+252,Splitting a deck of cards,0,0,1,3,1.3,0.87
+253,Splitting a deck of cards,0,1,0,3,1.4,0.86
+254,Splitting a deck of cards,1,0,0,3,1.48,0.89
+255,Splitting a deck of cards,0,0,1,6,1.49,0.88
+256,Splitting a deck of cards,0,1,0,6,1.63,0.79
+257,Splitting a deck of cards,1,0,0,6,1.7,0.82
+258,Object based generalization for reasoning (Phyre),0,0,1,3,1.57,1.04
+259,Object based generalization for reasoning (Phyre),0,1,0,3,1.66,1.12
+260,Object based generalization for reasoning (Phyre),1,0,0,3,1.72,1.11
+261,Object based generalization for reasoning (Phyre),0,0,1,6,1.72,1.13
+262,Object based generalization for reasoning (Phyre),0,1,0,6,1.81,1.12
+263,Object based generalization for reasoning (Phyre),1,0,0,6,1.88,1.14
+264,Ravens Matrices,0,0,1,3,1.22,0.8
+265,Ravens Matrices,0,1,0,3,1.35,0.72
+266,Ravens Matrices,1,0,0,3,1.36,0.77
+267,Ravens Matrices,0,0,1,6,1.38,0.78
+268,Ravens Matrices,0,1,0,6,1.54,0.66
+269,Ravens Matrices,1,0,0,6,1.57,0.66
+270,Trivia Multiple Choice Quiz,0,0,1,3,1.4,0.83
+271,Trivia Multiple Choice Quiz,0,1,0,3,1.53,0.74
+272,Trivia Multiple Choice Quiz,1,0,0,3,1.57,0.8
+273,Trivia Multiple Choice Quiz,0,0,1,6,1.57,0.76
+274,Trivia Multiple Choice Quiz,0,1,0,6,1.7,0.67
+275,Trivia Multiple Choice Quiz,1,0,0,6,1.74,0.69
+276,Railroad Route Construction game (Impossible Version),0,0,1,3,1.18,0.63
+277,Railroad Route Construction game (Impossible Version),0,1,0,3,1.26,0.59
+278,Railroad Route Construction game (Impossible Version),1,0,0,3,1.28,0.62
+279,Railroad Route Construction game (Impossible Version),0,0,1,6,1.36,0.61
+280,Railroad Route Construction game (Impossible Version),0,1,0,6,1.45,0.51
+281,Railroad Route Construction game (Impossible Version),1,0,0,6,1.5,0.52
+282,Desert survival,0,0,1,3,1.38,0.8
+283,Desert survival,0,1,0,3,1.46,0.69
+284,Desert survival,1,0,0,3,1.49,0.78
+285,Desert survival,0,0,1,6,1.62,0.79
+286,Desert survival,0,1,0,6,1.69,0.68
+287,Desert survival,1,0,0,6,1.75,0.72
+288,Graph coloring task,0,0,1,3,1.42,0.93
+289,Graph coloring task,0,1,0,3,1.56,0.95
+290,Graph coloring task,1,0,0,3,1.58,0.98
+291,Graph coloring task,0,0,1,6,1.56,0.99
+292,Graph coloring task,0,1,0,6,1.72,0.96
+293,Graph coloring task,1,0,0,6,1.78,0.97
+294,Husbands and wives transfer,0,0,1,3,1.44,0.95
+295,Husbands and wives transfer,0,1,0,3,1.51,0.95
+296,Husbands and wives transfer,1,0,0,3,1.59,0.99
+297,Husbands and wives transfer,0,0,1,6,1.62,0.97
+298,Husbands and wives transfer,0,1,0,6,1.72,0.9
+299,Husbands and wives transfer,1,0,0,6,1.79,0.94
+300,Checkers,0,0,1,3,1.24,0.9
+301,Checkers,0,1,0,3,1.36,0.77
+302,Checkers,1,0,0,3,1.37,0.9
+303,Checkers,0,0,1,6,1.4,0.88
+304,Checkers,0,1,0,6,1.5,0.79
+305,Checkers,1,0,0,6,1.57,0.81
+306,Recall images,0,0,1,3,1.33,0.86
+307,Recall images,0,1,0,3,1.44,0.8
+308,Recall images,1,0,0,3,1.48,0.83
+309,Recall images,0,0,1,6,1.51,0.83
+310,Recall images,0,1,0,6,1.63,0.72
+311,Recall images,1,0,0,6,1.71,0.75
+312,Oligopoly game,0,0,1,3,1.17,0.73
+313,Oligopoly game,0,1,0,3,1.23,0.63
+314,Oligopoly game,1,0,0,3,1.32,0.68
+315,Oligopoly game,0,0,1,6,1.37,0.68
+316,Oligopoly game,0,1,0,6,1.45,0.54
+317,Oligopoly game,1,0,0,6,1.5,0.57
+318,Bullard Houses,0,0,1,3,1.25,0.88
+319,Bullard Houses,0,1,0,3,1.3,0.8
+320,Bullard Houses,1,0,0,3,1.36,0.87
+321,Bullard Houses,0,0,1,6,1.5,0.85
+322,Bullard Houses,0,1,0,6,1.54,0.75
+323,Bullard Houses,1,0,0,6,1.57,0.79
+324,Arithmetic problem 2,0,0,1,3,1.43,0.9
+325,Arithmetic problem 2,0,1,0,3,1.56,0.82
+326,Arithmetic problem 2,1,0,0,3,1.59,0.87
+327,Arithmetic problem 2,0,0,1,6,1.61,0.91
+328,Arithmetic problem 2,0,1,0,6,1.73,0.77
+329,Arithmetic problem 2,1,0,0,6,1.81,0.82
+330,Find the common symbol,0,0,1,3,1.37,0.9
+331,Find the common symbol,0,1,0,3,1.49,0.84
+332,Find the common symbol,1,0,0,3,1.57,0.87
+333,Find the common symbol,0,0,1,6,1.58,0.89
+334,Find the common symbol,0,1,0,6,1.68,0.77
+335,Find the common symbol,1,0,0,6,1.77,0.81
+336,Blocks World for Teams,0,0,1,3,1.51,0.99
+337,Blocks World for Teams,0,1,0,3,1.64,0.92
+338,Blocks World for Teams,1,0,0,3,1.66,0.95
+339,Blocks World for Teams,0,0,1,6,1.64,0.99
+340,Blocks World for Teams,0,1,0,6,1.78,0.84
+341,Blocks World for Teams,1,0,0,6,1.84,0.9
+342,Intergroup Prisoner's Dilemma,0,0,1,3,1.16,0.72
+343,Intergroup Prisoner's Dilemma,0,1,0,3,1.23,0.6
+344,Intergroup Prisoner's Dilemma,1,0,0,3,1.32,0.64
+345,Intergroup Prisoner's Dilemma,0,0,1,6,1.36,0.62
+346,Intergroup Prisoner's Dilemma,0,1,0,6,1.44,0.5
+347,Intergroup Prisoner's Dilemma,1,0,0,6,1.49,0.51
+348,Minimum-effort tacit coordination game,0,0,1,3,1.1,0.68
+349,Minimum-effort tacit coordination game,0,1,0,3,1.19,0.54
+350,Minimum-effort tacit coordination game,1,0,0,3,1.26,0.6
+351,Minimum-effort tacit coordination game,0,0,1,6,1.33,0.63
+352,Minimum-effort tacit coordination game,0,1,0,6,1.43,0.49
+353,Minimum-effort tacit coordination game,1,0,0,6,1.48,0.53
+354,Public goods game,0,0,1,3,1.09,0.65
+355,Public goods game,0,1,0,3,1.17,0.54
+356,Public goods game,1,0,0,3,1.25,0.58
+357,Public goods game,0,0,1,6,1.34,0.6
+358,Public goods game,0,1,0,6,1.42,0.47
+359,Public goods game,1,0,0,6,1.46,0.47
+360,The beer game,0,0,1,3,1.43,0.85
+361,The beer game,0,1,0,3,1.54,0.79
+362,The beer game,1,0,0,3,1.58,0.81
+363,The beer game,0,0,1,6,1.68,0.82
+364,The beer game,0,1,0,6,1.75,0.69
+365,The beer game,1,0,0,6,1.78,0.75
+366,Pharmaceutical Company (hidden-profile),0,0,1,3,1.32,0.86
+367,Pharmaceutical Company (hidden-profile),0,1,0,3,1.4,0.77
+368,Pharmaceutical Company (hidden-profile),1,0,0,3,1.48,0.8
+369,Pharmaceutical Company (hidden-profile),0,0,1,6,1.58,0.87
+370,Pharmaceutical Company (hidden-profile),0,1,0,6,1.66,0.76
+371,Pharmaceutical Company (hidden-profile),1,0,0,6,1.72,0.77
+372,Ultimatum game (various versions),0,0,1,3,1.04,0.66
+373,Ultimatum game (various versions),0,1,0,3,1.12,0.57
+374,Ultimatum game (various versions),1,0,0,3,1.19,0.61
+375,Ultimatum game (various versions),0,0,1,6,1.28,0.61
+376,Ultimatum game (various versions),0,1,0,6,1.37,0.49
+377,Ultimatum game (various versions),1,0,0,6,1.39,0.49
+378,New Recruit,0,0,1,3,1.14,0.75
+379,New Recruit,0,1,0,3,1.2,0.7
+380,New Recruit,1,0,0,3,1.26,0.7
+381,New Recruit,0,0,1,6,1.33,0.67
+382,New Recruit,0,1,0,6,1.42,0.56
+383,New Recruit,1,0,0,6,1.44,0.57
+384,Investment Game (aka Trust Game),0,0,1,3,1.1,0.65
+385,Investment Game (aka Trust Game),0,1,0,3,1.17,0.56
+386,Investment Game (aka Trust Game),1,0,0,3,1.24,0.59
+387,Investment Game (aka Trust Game),0,0,1,6,1.35,0.6
+388,Investment Game (aka Trust Game),0,1,0,6,1.43,0.49
+389,Investment Game (aka Trust Game),1,0,0,6,1.47,0.49
+390,Aerospace Investment (Role-playing),0,0,1,3,1.15,0.77
+391,Aerospace Investment (Role-playing),0,1,0,3,1.21,0.73
+392,Aerospace Investment (Role-playing),1,0,0,3,1.31,0.73
+393,Aerospace Investment (Role-playing),0,0,1,6,1.38,0.69
+394,Aerospace Investment (Role-playing),0,1,0,6,1.46,0.61
+395,Aerospace Investment (Role-playing),1,0,0,6,1.49,0.62
+396,Minimal Group Paradigm (study diversity),0,0,1,3,0.52,0.54
+397,Minimal Group Paradigm (study diversity),0,1,0,3,0.6,0.49
+398,Minimal Group Paradigm (study diversity),1,0,0,3,0.65,0.54
+399,Minimal Group Paradigm (study diversity),0,0,1,6,0.88,0.59
+400,Minimal Group Paradigm (study diversity),0,1,0,6,0.98,0.54
+401,Minimal Group Paradigm (study diversity),1,0,0,6,1.0,0.53
+402,Volunteer Investment Game,0,0,1,3,1.31,0.81
+403,Volunteer Investment Game,0,1,0,3,1.38,0.73
+404,Volunteer Investment Game,1,0,0,3,1.45,0.78
+405,Volunteer Investment Game,0,0,1,6,1.49,0.73
+406,Volunteer Investment Game,0,1,0,6,1.56,0.6
+407,Volunteer Investment Game,1,0,0,6,1.6,0.65
+408,Sender-Receiver game,0,0,1,3,1.16,0.71
+409,Sender-Receiver game,0,1,0,3,1.22,0.59
+410,Sender-Receiver game,1,0,0,3,1.31,0.64
+411,Sender-Receiver game,0,0,1,6,1.36,0.63
+412,Sender-Receiver game,0,1,0,6,1.45,0.5
+413,Sender-Receiver game,1,0,0,6,1.49,0.53
+414,Iterated Snowdrift Game (With Punishment),0,0,1,3,1.31,0.87
+415,Iterated Snowdrift Game (With Punishment),0,1,0,3,1.41,0.79
+416,Iterated Snowdrift Game (With Punishment),1,0,0,3,1.48,0.83
+417,Iterated Snowdrift Game (With Punishment),0,0,1,6,1.55,0.8
+418,Iterated Snowdrift Game (With Punishment),0,1,0,6,1.63,0.68
+419,Iterated Snowdrift Game (With Punishment),1,0,0,6,1.68,0.72
+420,Dictator game and its variants,0,0,1,3,1.14,0.74
+421,Dictator game and its variants,0,1,0,3,1.21,0.68
+422,Dictator game and its variants,1,0,0,3,1.27,0.73
+423,Dictator game and its variants,0,0,1,6,1.34,0.67
+424,Dictator game and its variants,0,1,0,6,1.43,0.57
+425,Dictator game and its variants,1,0,0,6,1.46,0.58
+426,Chicken,0,0,1,3,1.1,0.72
+427,Chicken,0,1,0,3,1.16,0.59
+428,Chicken,1,0,0,3,1.26,0.64
+429,Chicken,0,0,1,6,1.3,0.61
+430,Chicken,0,1,0,6,1.39,0.5
+431,Chicken,1,0,0,6,1.45,0.5
+432,Battle of the sexes,0,0,1,3,1.28,0.76
+433,Battle of the sexes,0,1,0,3,1.33,0.66
+434,Battle of the sexes,1,0,0,3,1.44,0.7
+435,Battle of the sexes,0,0,1,6,1.51,0.7
+436,Battle of the sexes,0,1,0,6,1.59,0.57
+437,Battle of the sexes,1,0,0,6,1.64,0.59
+438,Apache helicopter flight simulator (Longbow2),0,0,1,3,1.25,0.88
+439,Apache helicopter flight simulator (Longbow2),0,1,0,3,1.33,0.82
+440,Apache helicopter flight simulator (Longbow2),1,0,0,3,1.36,0.84
+441,Apache helicopter flight simulator (Longbow2),0,0,1,6,1.39,0.79
+442,Apache helicopter flight simulator (Longbow2),0,1,0,6,1.49,0.71
+443,Apache helicopter flight simulator (Longbow2),1,0,0,6,1.55,0.72
+444,Prisoner's Dilemma (various versions),0,0,1,3,1.07,0.69
+445,Prisoner's Dilemma (various versions),0,1,0,3,1.14,0.58
+446,Prisoner's Dilemma (various versions),1,0,0,3,1.22,0.62
+447,Prisoner's Dilemma (various versions),0,0,1,6,1.31,0.64
+448,Prisoner's Dilemma (various versions),0,1,0,6,1.39,0.51
+449,Prisoner's Dilemma (various versions),1,0,0,6,1.42,0.52
+450,Mock jury,0,0,1,3,0.92,0.71
+451,Mock jury,0,1,0,3,1.01,0.64
+452,Mock jury,1,0,0,3,1.06,0.65
+453,Mock jury,0,0,1,6,1.23,0.67
+454,Mock jury,0,1,0,6,1.33,0.58
+455,Mock jury,1,0,0,6,1.35,0.57
+456,Biopharm Seltek,0,0,1,3,1.09,0.8
+457,Biopharm Seltek,0,1,0,3,1.16,0.76
+458,Biopharm Seltek,1,0,0,3,1.24,0.76
+459,Biopharm Seltek,0,0,1,6,1.35,0.73
+460,Biopharm Seltek,0,1,0,6,1.45,0.64
+461,Biopharm Seltek,1,0,0,6,1.46,0.66
+462,Iterated Snowdrift Game (Without Punishment),0,0,1,3,1.16,0.79
+463,Iterated Snowdrift Game (Without Punishment),0,1,0,3,1.25,0.69
+464,Iterated Snowdrift Game (Without Punishment),1,0,0,3,1.32,0.75
+465,Iterated Snowdrift Game (Without Punishment),0,0,1,6,1.4,0.73
+466,Iterated Snowdrift Game (Without Punishment),0,1,0,6,1.48,0.59
+467,Iterated Snowdrift Game (Without Punishment),1,0,0,6,1.54,0.62
+468,Investment game (hidden-profile),0,0,1,3,1.22,0.84
+469,Investment game (hidden-profile),0,1,0,3,1.31,0.76
+470,Investment game (hidden-profile),1,0,0,3,1.37,0.8
+471,Investment game (hidden-profile),0,0,1,6,1.47,0.85
+472,Investment game (hidden-profile),0,1,0,6,1.57,0.75
+473,Investment game (hidden-profile),1,0,0,6,1.62,0.77
+474,Organization Game,0,0,1,3,1.47,0.91
+475,Organization Game,0,1,0,3,1.56,0.88
+476,Organization Game,1,0,0,3,1.6,0.91
+477,Organization Game,0,0,1,6,1.69,0.89
+478,Organization Game,0,1,0,6,1.77,0.79
+479,Organization Game,1,0,0,6,1.79,0.85
+480,TOPSIM - general mgmt business game,0,0,1,3,1.42,1.02
+481,TOPSIM - general mgmt business game,0,1,0,3,1.44,0.97
+482,TOPSIM - general mgmt business game,1,0,0,3,1.49,1.03
+483,TOPSIM - general mgmt business game,0,0,1,6,1.55,0.9
+484,TOPSIM - general mgmt business game,0,1,0,6,1.62,0.82
+485,TOPSIM - general mgmt business game,1,0,0,6,1.64,0.86
+486,Best job candidate (hidden-profile),0,0,1,3,1.28,0.81
+487,Best job candidate (hidden-profile),0,1,0,3,1.38,0.71
+488,Best job candidate (hidden-profile),1,0,0,3,1.44,0.77
+489,Best job candidate (hidden-profile),0,0,1,6,1.57,0.8
+490,Best job candidate (hidden-profile),0,1,0,6,1.64,0.68
+491,Best job candidate (hidden-profile),1,0,0,6,1.7,0.7

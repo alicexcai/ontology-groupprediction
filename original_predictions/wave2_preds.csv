@@ -1,0 +1,31 @@
+Task,Complexity,playerCount,Weak_NN,Weak_LM,Strong_NN,Strong_LM,Weak_Baseline,Strong_Baseline
+Logic Problem,Low,3,1.37,1.62,0.99,0.96,1.33,0.86
+Logic Problem,Low,6,1.66,1.71,0.89,0.93,1.33,0.86
+Logic Problem,Medium,3,1.11,1.45,0.92,0.91,1.33,0.86
+Logic Problem,Medium,6,1.23,1.54,0.83,0.88,1.33,0.86
+Logic Problem,High,3,1.33,1.58,0.98,0.97,1.33,0.86
+Logic Problem,High,6,1.68,1.67,0.90,0.94,1.33,0.86
+Unscramble Words,Low,3,2.23,2.22,1.21,1.19,1.33,0.86
+Unscramble Words,Low,6,2.57,2.32,1.11,1.15,1.33,0.86
+Unscramble Words,Medium,3,1.70,2.06,1.13,1.14,1.33,0.86
+Unscramble Words,Medium,6,2.09,2.15,1.07,1.10,1.33,0.86
+Unscramble Words,High,3,2.23,2.18,1.20,1.20,1.33,0.86
+Unscramble Words,High,6,2.53,2.28,1.15,1.16,1.33,0.86
+Random Dot Motion,Low,3,0.94,0.89,0.80,0.74,1.33,0.86
+Random Dot Motion,Low,6,1.07,0.99,0.68,0.70,1.33,0.86
+Random Dot Motion,Medium,3,0.79,0.72,0.73,0.68,1.33,0.86
+Random Dot Motion,Medium,6,0.93,0.82,0.62,0.65,1.33,0.86
+Random Dot Motion,High,3,0.87,0.85,0.78,0.74,1.33,0.86
+Random Dot Motion,High,6,1.04,0.95,0.69,0.71,1.33,0.86
+Recall Word Lists,Low,3,1.38,1.55,0.99,0.92,1.33,0.86
+Recall Word Lists,Low,6,1.64,1.65,0.86,0.89,1.33,0.86
+Recall Word Lists,Medium,3,0.97,1.38,0.91,0.87,1.33,0.86
+Recall Word Lists,Medium,6,1.16,1.48,0.81,0.84,1.33,0.86
+Recall Word Lists,High,3,1.39,1.51,0.97,0.93,1.33,0.86
+Recall Word Lists,High,6,1.60,1.61,0.89,0.90,1.33,0.86
+Typing,Low,3,1.40,1.33,0.89,0.84,1.33,0.86
+Typing,Low,6,1.64,1.42,0.76,0.80,1.33,0.86
+Typing,Medium,3,0.94,1.16,0.81,0.78,1.33,0.86
+Typing,Medium,6,1.16,1.25,0.69,0.75,1.33,0.86
+Typing,High,3,1.40,1.28,0.88,0.84,1.33,0.86
+Typing,High,6,1.61,1.38,0.76,0.81,1.33,0.86
