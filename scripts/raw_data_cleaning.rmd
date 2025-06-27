@@ -459,6 +459,7 @@ synergy_data_for_prediction |>
 
 ## Figure 2
 ```{r}
+# Transform and summarize data, pooling across waves (as we aren't using the 'wave' terminology anymore)
 synergy_summary_data <- synergy_data |>
   pivot_longer(c("strong", "weak"), names_to = "DV") |>
   pivot_longer(
@@ -467,10 +468,11 @@ synergy_summary_data <- synergy_data |>
     names_to = c("name", "se"),
     values_to = "SE"
   ) |>
-  filter(DV == name) |> select(-name, -se) |>
+  filter(DV == name) |> 
+  select(-name, -se) |>
   mutate(
-    DV = if_else(DV == "weak", paste0("Weak ",outcome_term), paste0("Strong ",outcome_term)),
-    DV = ordered(DV, levels = c(paste0("Weak ",outcome_term), paste0("Strong ",outcome_term))),
+    DV = if_else(DV == "weak", paste0("Weak ", outcome_term), paste0("Strong ", outcome_term)),
+    DV = ordered(DV, levels = c(paste0("Weak ", outcome_term), paste0("Strong ", outcome_term))),
     complexity = paste(complexity, "Complexity"),
     complexity = ordered(
       complexity,
@@ -481,76 +483,76 @@ synergy_summary_data <- synergy_data |>
     grouping = "Task",
     group = task
   ) |> 
-  left_join(task_map |> select(task,wave)) |> 
-  mutate(
-    wave = paste0("Wave ",wave)
-  )
+  left_join(task_map |> select(task, wave)) # still needed unless you want to fully drop now
 
-aggregated_synergy_summary_data_by_wave = synergy_summary_data |>
-  select(-grouping, -group) |>
-  pivot_longer(c(task, complexity, playerCount),
-               names_to = "grouping",
-               values_to = "group") |>
-  group_by(grouping, group, DV, wave) |>
-  summarise(value = mean(value),
-            SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2)) |> 
+# Pool across waves and alphabetize tasks
+aggregated_synergy_summary_data_pooled = synergy_summary_data |>
+  select(-grouping, -group, -wave) |>  # remove grouping, group, wave
+  pivot_longer(
+    c(task, complexity, playerCount),
+    names_to = "grouping",
+    values_to = "group"
+  ) |>
+  group_by(grouping, group, DV) |>
+  summarise(
+    value = mean(value, na.rm = TRUE),
+    SE = sqrt(sum(SE ^ 2, na.rm = TRUE) / length(SE)^2)
+  ) |>
   mutate(
     grouping = case_when(
       grouping == "complexity" ~ "Complexity",
       grouping == "playerCount" ~ "Size",
       grouping == "task" ~ "Task",
     ),
-    grouping = ordered(grouping, levels = c("Task", "Complexity", "Size"))
-  ) |> 
+    grouping = ordered(grouping, levels = c("Task", "Complexity", "Size")),
+    group = factor(group, levels = sort(unique(group))) # ensure alphabetical
+  ) |>
   filter(grouping == "Task")
 
-figure_2 <- aggregated_synergy_summary_data_by_wave |>
+# Prepare plotting data (alphabetized groups)
+synergy_summary_data <- synergy_summary_data |>
+  mutate(
+    group = factor(group, levels = sort(unique(group))) 
+  )
+
+# Plot (no wave faceting)
+figure_2 <- aggregated_synergy_summary_data_pooled |>
   ggplot(aes(
     value,
-    reorder(group, value),
-    xmin = value - z * SE ,
-    xmax = value + z * SE,
+    reorder(group, value), # or just group if you want forced alphabetical
+    xmin = value - z * SE,
+    xmax = value + z * SE
   )) +
   facet_grid(
     cols = vars(DV),
-    rows = vars(wave),
     scales = "free_y",
     space = "free",
-    switch = "both",
+    switch = "both"
   ) +
   geom_vline(xintercept = c(1), linetype = "21") +
   theme_pubclean() +
   theme_pubclean(flip = FALSE) +
   theme(
     legend.position = "bottom",
-    plot.margin = margin(
-      t = 1,
-      r = 1,
-      b = 1,
-      l = 1
-    ),
+    plot.margin = margin(t = 1, r = 1, b = 1, l = 1),
     strip.placement = "outside",
-    # strip.background = element_blank(),
     panel.spacing = unit(0.5, "lines"),
-    legend.margin = margin(t = -25),
-  ) + 
+    legend.margin = margin(t = -25)
+  ) +
   geom_pointrange(
     data = synergy_summary_data,
     aes(
-      value,
-      group,
-      shape = playerCount,
-      # color = if_else(display,complexity,"none"),
+    value,
+    reorder(group, value),  # sorts by value, highest on top, lowest at bottom
+    shape = playerCount,
       color = complexity,
-      xmin = value - z * SE ,
-      xmax = value + z * SE,
-      # fill = if_else(((value - z * SE) - 1)*((value + z * SE) - 1)>0,complexity,"white")
+      xmin = value - z * SE,
+      xmax = value + z * SE
     ),
     position = position_dodge2(width = 0.8, padding = 0.1, reverse = FALSE),
     size = .4,
     fill = "white",
-    stroke = .9,
-    # shape = 21
+    stroke = .9
   ) +
   scale_color_manual(
     values = c(
@@ -558,22 +560,21 @@ figure_2 <- aggregated_synergy_summary_data_by_wave |>
       "Medium Complexity" = "#7570b3",
       "High Complexity" = "#d95f02",
       "white" = "white"
-    ),
-    # guide = "none"
+    )
   ) +
-  scale_shape_manual(values = c(21,4)) +
-  # scale_shape_manual(values = c(21,24)) +
+  scale_shape_manual(values = c(21, 4)) +
   labs(
     y = "",
     x = "",
     color = "",
     fill = "",
     shape = ""
-  ) + geom_crossbar() +
+  ) +
+  geom_crossbar() +
   theme(
     text = element_text(family = "Arial"),
     legend.position = "bottom",
-    legend.text = element_text(size = 16), 
+    legend.text = element_text(size = 16),
     plot.margin = margin(t = 1, r = 1, b = 1, l = 1),
     strip.placement = "outside",
     panel.spacing = unit(0.5, "lines"),
