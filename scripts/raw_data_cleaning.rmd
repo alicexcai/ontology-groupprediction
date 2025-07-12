@@ -459,7 +459,6 @@ synergy_data_for_prediction |>
 
 ## Figure 2
 ```{r}
-# Transform and summarize data, pooling across waves (as we aren't using the 'wave' terminology anymore)
 synergy_summary_data <- synergy_data |>
   pivot_longer(c("strong", "weak"), names_to = "DV") |>
   pivot_longer(
@@ -468,11 +467,10 @@ synergy_summary_data <- synergy_data |>
     names_to = c("name", "se"),
     values_to = "SE"
   ) |>
-  filter(DV == name) |> 
-  select(-name, -se) |>
+  filter(DV == name) |> select(-name, -se) |>
   mutate(
-    DV = if_else(DV == "weak", paste0("Weak ", outcome_term), paste0("Strong ", outcome_term)),
-    DV = ordered(DV, levels = c(paste0("Weak ", outcome_term), paste0("Strong ", outcome_term))),
+    DV = if_else(DV == "weak", paste0("Weak ",outcome_term), paste0("Strong ",outcome_term)),
+    DV = ordered(DV, levels = c(paste0("Weak ",outcome_term), paste0("Strong ",outcome_term))),
     complexity = paste(complexity, "Complexity"),
     complexity = ordered(
       complexity,
@@ -483,48 +481,45 @@ synergy_summary_data <- synergy_data |>
     grouping = "Task",
     group = task
   ) |> 
-  left_join(task_map |> select(task, wave)) # still needed unless you want to fully drop now
+  left_join(task_map |> select(task,wave)) |> 
+  mutate(
+    wave = paste0("Wave ",wave)
+  )
 
-# Pool across waves and alphabetize tasks
-aggregated_synergy_summary_data_pooled = synergy_summary_data |>
-  select(-grouping, -group, -wave) |>  # remove grouping, group, wave
-  pivot_longer(
-    c(task, complexity, playerCount),
-    names_to = "grouping",
-    values_to = "group"
-  ) |>
-  group_by(grouping, group, DV) |>
-  summarise(
-    value = mean(value, na.rm = TRUE),
-    SE = sqrt(sum(SE ^ 2, na.rm = TRUE) / length(SE)^2)
-  ) |>
+aggregated_synergy_summary_data_by_wave = synergy_summary_data |>
+  select(-grouping, -group) |>
+  pivot_longer(c(task, complexity, playerCount),
+               names_to = "grouping",
+               values_to = "group") |>
+  group_by(grouping, group, DV, wave) |>
+  summarise(value = mean(value),
+            SE = sqrt(sum(SE ^ 2) / length(SE) ^ 2)) |> 
   mutate(
     grouping = case_when(
       grouping == "complexity" ~ "Complexity",
       grouping == "playerCount" ~ "Size",
       grouping == "task" ~ "Task",
     ),
-    grouping = ordered(grouping, levels = c("Task", "Complexity", "Size")),
-    group = factor(group, levels = sort(unique(group))) # ensure alphabetical
-  ) |>
+    grouping = ordered(grouping, levels = c("Task", "Complexity", "Size"))
+  ) |> 
   filter(grouping == "Task")
 
-# Prepare plotting data (alphabetized groups)
-synergy_summary_data <- synergy_summary_data |>
-  mutate(
-    group = factor(group, levels = sort(unique(group))) 
-  )
+# Make the order "Strong," then "Weak"
+aggregated_synergy_summary_data_by_wave$DV <- factor(
+  aggregated_synergy_summary_data_by_wave$DV,
+  levels = rev(levels(aggregated_synergy_summary_data_by_wave$DV))
+)
 
-# Plot (no wave faceting)
-figure_2 <- aggregated_synergy_summary_data_pooled |>
+figure_2 <- aggregated_synergy_summary_data_by_wave |>
   ggplot(aes(
     value,
-    reorder(group, value), # or just group if you want forced alphabetical
-    xmin = value - z * SE,
-    xmax = value + z * SE
+    reorder(group, value),
+    xmin = value - z * SE ,
+    xmax = value + z * SE,
   )) +
   facet_grid(
     cols = vars(DV),
+    rows = vars(wave),
     scales = "free_y",
     space = "free",
     switch = "both"
@@ -534,25 +529,34 @@ figure_2 <- aggregated_synergy_summary_data_pooled |>
   theme_pubclean(flip = FALSE) +
   theme(
     legend.position = "bottom",
-    plot.margin = margin(t = 1, r = 1, b = 1, l = 1),
+    plot.margin = margin(
+      t = 1,
+      r = 1,
+      b = 1,
+      l = 1
+    ),
     strip.placement = "outside",
+    # strip.background = element_blank(),
     panel.spacing = unit(0.5, "lines"),
-    legend.margin = margin(t = -25)
-  ) +
+    legend.margin = margin(t = -25),
+  ) + 
   geom_pointrange(
     data = synergy_summary_data,
     aes(
-    value,
-    reorder(group, value),  # sorts by value, highest on top, lowest at bottom
-    shape = playerCount,
+      value,
+      group,
+      shape = playerCount,
+      # color = if_else(display,complexity,"none"),
       color = complexity,
-      xmin = value - z * SE,
-      xmax = value + z * SE
+      xmin = value - z * SE ,
+      xmax = value + z * SE,
+      # fill = if_else(((value - z * SE) - 1)*((value + z * SE) - 1)>0,complexity,"white")
     ),
     position = position_dodge2(width = 0.8, padding = 0.1, reverse = FALSE),
     size = .4,
     fill = "white",
-    stroke = .9
+    stroke = .9,
+    # shape = 21
   ) +
   scale_color_manual(
     values = c(
@@ -560,35 +564,35 @@ figure_2 <- aggregated_synergy_summary_data_pooled |>
       "Medium Complexity" = "#7570b3",
       "High Complexity" = "#d95f02",
       "white" = "white"
-    )
+    ),
+    # guide = "none"
   ) +
-  scale_shape_manual(values = c(21, 4)) +
+  scale_shape_manual(values = c(21,4)) +
+  # scale_shape_manual(values = c(21,24)) +
   labs(
     y = "",
     x = "",
     color = "",
     fill = "",
     shape = ""
-  ) +
-  geom_crossbar() +
-  theme(
-    text = element_text(family = "Arial"),
-    legend.position = "bottom",
-    legend.text = element_text(size = 16),
-    plot.margin = margin(t = 1, r = 1, b = 1, l = 1),
-    strip.placement = "outside",
-    panel.spacing = unit(0.5, "lines"),
-    legend.margin = margin(t = -25),
-    legend.box.margin = margin(t = 20, r = 10, b = 10, l = 10),
-    strip.background = element_blank(),
-    strip.text = element_text(face = "bold", color = "black", size = 20),
-    axis.text.y = element_text(size = 16),
-    axis.text.x = element_text(size = 16)
-  )
-
+  ) + geom_crossbar() +
+ theme(
+  legend.position = "top",
+  legend.justification = "right",
+  legend.box = "horizontal",
+  legend.text = element_text(size = 18),
+  plot.margin = margin(t = 28, r = 50, b = 15, l = 5),  # Increase r until legend fits!
+  strip.placement = "outside",
+  panel.spacing = unit(0.5, "lines"),
+  legend.margin = margin(b = 10, t = 0),
+  legend.box.margin = margin(t = 7, r = 0, b = 0, l = 0),
+  strip.background = element_blank(),
+  strip.text = element_text(face = "bold", color = "black", size = 20),
+  axis.text.y = element_text(size = 18),
+  axis.text.x = element_text(size = 18)
+)
 ggsave("../outputs/figure_2.pdf", plot = figure_2, height = 14, width = 14)
 ggsave("../outputs/figure_2.png", plot = figure_2, height = 14, width = 14)
-
 ```
 
 ## Group Composition @ Observation Level
