@@ -88,6 +88,19 @@ offline_scoring <- load_CSVs("offline scoring",FALSE)
 ```
 
 ```{r}
+# why are so few of them called typing?
+table(rounds$data.type)
+```
+
+```{r}
+# export player-rounds (this has the players)
+player_rounds %>% write_csv('../outputs/player_rounds.csv')
+# export the stage data (this has the raw outputs)
+stages %>% write_csv('../outputs/stages.csv')
+```
+
+
+```{r}
 tasks_in_waves <- list(list(
   wave = 1,
   tasks = c(
@@ -222,7 +235,7 @@ task_instances <-
 
 ```{r}
 # export "raw" data
-player_conditions |>
+typing <- player_conditions |>
   select(playerId, playerCount, data.playerIds) |>
   left_join(player_stages) |>
   left_join(
@@ -240,8 +253,24 @@ player_conditions |>
          score = as.numeric(if_else(is.na(score), data.score, as.character(score))),
          playerCount = ordered(playerCount)
          ) |>
-  ungroup() |> write_csv('../outputs/raw_recruitment_info_for_explore.csv')
+  ungroup() |> 
+    filter(str_detect(displayName, "Typing")) |>
+    select(roundId) |> unique()
+
+# |> write_csv('../outputs/raw_recruitment_info_for_explore.csv')
 ```
+
+```{r}
+typing <- str_split(typing, ",\\s*")[[1]] |> 
+  str_remove_all('^c\\(|\\)$') |> 
+  str_remove_all('"') |> 
+  str_trim()
+
+# now try the match
+rounds %>%
+  filter(roundId %in% typing)
+```
+
 
 ## Data preparation
 ```{r}
@@ -297,6 +326,7 @@ raw_score_data <-
   summarize(score = max(score), duration = min(duration), efficiency = max(efficiency)) |> 
   ungroup()
 ```
+
 
 # Functions
 
