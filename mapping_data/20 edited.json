@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Act",
+    "count": 20,
+    "children": [
+      {
+        "name": "[Act on what?]",
+        "count": 20,
+        "children": [
+          {
+            "name": "Act on information",
+            "count": 18,
+            "children": [
+              {
+                "name": "Create information",
+                "count": 11,
+                "children": [
+                  {
+                    "name": "Analyze",
+                    "count": 4,
+                    "children": [
+                      {
+                        "name": "Solve",
+                        "count": 4,
+                        "children": [
+                          {
+                            "name": "Unscramble",
+                            "count": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Decide",
+                    "count": 4,
+                    "children": [
+                      {
+                        "name": "Plan",
+                        "count": 2,
+                        "children": [
+                          {
+                            "name": "Design",
+                            "count": 2,
+                            "children": [
+                              {
+                                "name": "Specify",
+                                "count": 2,
+                                "children": [
+                                  {
+                                    "name": "Allocate",
+                                    "count": 1
+                                  },
+                                  {
+                                    "name": "Assign",
+                                    "count": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "[Decide how?]",
+                        "count": 1,
+                        "children": [
+                          {
+                            "name": "Select",
+                            "count": 1,
+                            "children": [
+                              {
+                                "name": "[Select for what purpose?]",
+                                "count": 1,
+                                "children": [
+                                  {
+                                    "name": "Classify",
+                                    "count": 1
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Generate",
+                    "count": 3
+                  }
+                ]
+              },
+              {
+                "name": "Transfer information",
+                "count": 7,
+                "children": [
+                  {
+                    "name": "Get information",
+                    "count": 5,
+                    "children": [
+                      {
+                        "name": "[Get information how?]",
+                        "count": 5,
+                        "children": [
+                          {
+                            "name": "Perceive",
+                            "count": 3,
+                            "children": [
+                              {
+                                "name": "Find",
+                                "count": 1,
+                                "children": [
+                                  {
+                                    "name": "Locate",
+                                    "count": 1
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Observe",
+                                "count": 1
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Remember",
+                            "count": 2
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Provide information",
+                    "count": 2,
+                    "children": [
+                      {
+                        "name": "[Provide information how?]",
+                        "count": 2,
+                        "children": [
+                          {
+                            "name": "Express information",
+                            "count": 2,
+                            "children": [
+                              {
+                                "name": "Record",
+                                "count": 2,
+                                "children": [
+                                  {
+                                    "name": "Write",
+                                    "count": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Act on physical objects",
+            "count": 2,
+            "children": [
+              {
+                "name": "Modify (physical objects)",
+                "count": 2,
+                "children": [
+                  {
+                    "name": "Move (physical objects)",
+                    "count": 2,
+                    "children": [
+                      {
+                        "name": "React",
+                        "count": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
